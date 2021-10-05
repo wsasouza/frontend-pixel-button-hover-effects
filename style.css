@@ -35,21 +35,27 @@ a:hover {
   background: #ec0b36 url(/assets/pixel.png);
   transition-delay: 0.8s;
   background-size: 180px;
+  color: #000;
+  font-weight: 800;
   animation: animate 0.8s steps(8) forwards;
 }
 
 a:nth-child(2):hover {
   background: #730bec url(/assets/pixel2.png);
   transition-delay: 0.8s;
+  color: #000;
+  font-weight: 800;
   background-size: 180px;
-  animation: animate 0.8s steps(8) forwards;
+  animation: animate 1s steps(8) forwards;
 }
 
 @keyframes animate {
   0% {
     background-position-y: 0;
+    opacity: 0;
   }
   100% {
     background-position-y: -480px;
+    opacity: 1;
   }  
 }
